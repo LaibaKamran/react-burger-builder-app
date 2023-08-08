@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    min-height: 100vh; /* Ensure the container fills the viewport height */
+  }
+  
+
+.burgerIngredients{
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.burgerTop{
+    background-image: url(../assets/topSide.jpg);
+    background-size: 700px;
+    width: 100%;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.burgerBottom{
+    background-image: url(../assets/bottomSide.jpg);
+    background-size: 700px;
+    width: 100%;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ingredientsButtons{
+    background-color: #ca883c;
+    width: 100%;
+    height: 300px;
+    margin-top: auto; /* Push the div to the bottom of the container */
+    padding: 0;   
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sub-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+
+.ingrLabel{
+    flex: 2;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.morebtn{
+   flex: 1;
+   background-color: #8f5e1e;
+   color: white;
+   border: none;
+   /* border: 1px solid #aa6817; */
+   cursor: pointer;
+   padding: 8px 20px;
+   font-size: large;
+}
+
+.lessbtn{
+    flex: 1;
+    background-color: rgb(158, 157, 157);
+    color: white;
+    border: none;
+    padding: 8px 20\px;
+    font-size: large;
+    margin-right: 10px;
+}
+
+.lessbtn:disabled{
+    background-color: #ac9980;
+    border: 1px solid #7e7365;
+    color: #ccc;
+    cursor: default;
+}
