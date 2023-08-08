@@ -51,7 +51,7 @@ background-repeat: no-repeat;
 background-position: center; */
 width: 35%;
     height: 7%;
-    margin: 2% auto;
+    margin: 3px auto;
     background: -webkit-gradient(linear,left top,left bottom,from(#228c1d),to(#91ce50));
     background: -webkit-linear-gradient(#228c1d,#91ce50);
     background: -o-linear-gradient(#228c1d,#91ce50);
@@ -73,7 +73,7 @@ width: 30%;
     background: -webkit-linear-gradient(#bf3813,#c45e38);
     background: -o-linear-gradient(#bf3813,#c45e38);
     background: linear-gradient(#bf3813,#c45e38);
-    margin: 2% auto;
+    margin: 3px auto;
 }
 
 .cheeseSlice{
@@ -86,7 +86,7 @@ background-repeat: no-repeat;
 background-position: center; */
 width: 38%;
     height: 4.5%;
-    margin: 2% auto;
+    margin: 3px auto;
     background: -webkit-gradient(linear,left top,left bottom,from(#f4d004),to(#d6bb22));
     background: -webkit-linear-gradient(#f4d004,#d6bb22);
     background: -o-linear-gradient(#f4d004,#d6bb22);
@@ -108,7 +108,7 @@ width: 30%;
     background: -webkit-linear-gradient(#7f3608,#702e05);
     background: -o-linear-gradient(#7f3608,#702e05);
     background: linear-gradient(#7f3608,#702e05);
-    margin: 2% auto;
+    margin: 3px auto;
     border-radius: 15px;
 }
 
