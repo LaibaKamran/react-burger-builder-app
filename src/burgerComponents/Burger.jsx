@@ -28,7 +28,31 @@ export default function Burger(){
         }
     };
 
-    
+    const makeBurger = () => {
+        let  burger = [];
+
+        for(let i=0; i<lettuce; i++){
+            burger.push(<div key={burger.length} className='lettuceSlice'></div>)
+        }
+
+        for(let i=0; i<bacon; i++){
+            burger.push(<div key={burger.length} className='baconSlice'></div>)
+        }
+
+        for(let i=0; i<cheese; i++){
+            burger.push(<div key={burger.length} className='cheeseSlice'></div>)
+        }
+
+        for(let i=0; i<meat; i++){
+            burger.push(<div key={burger.length} className='meatSlice'></div>)
+        }
+
+        if (burger.length === 0) {
+            burger.push(<p key="0">Please start adding ingredients!</p>);
+          }
+      
+          return burger;
+    };
 
     return(
         <div className='container'>
