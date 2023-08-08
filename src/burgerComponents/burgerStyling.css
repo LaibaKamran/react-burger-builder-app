@@ -14,9 +14,6 @@ body{
     width: 100%;
     height: 400px;
     overflow: auto;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .burgerIngredients p{
@@ -31,6 +28,7 @@ body{
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 30px;
 }
 
 .burgerBottom{
@@ -173,4 +171,70 @@ width: 30%;
     border: 1px solid #7e7365;
     color: #ccc;
     cursor: not-allowed;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .burgerIngredients {
+        height: auto;
+    }
+
+    .burgerTop,
+    .burgerBottom {
+        height: 80px;
+        background-size: cover;
+    }
+
+    .lettuceSlice,
+    .baconSlice,
+    .cheeseSlice,
+    .meatSlice {
+        width: 100%;
+        height: 5%;
+    }
+
+    .ingredientsButtons {
+        height: auto;
+        padding: 20px;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: auto;
+    }
+
+    .sub-div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .ingrLabel {
+        flex: 1;
+        font-size: medium;
+    }
+
+    .morebtn,
+    .lessbtn {
+        flex: 1;
+        font-size: medium;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .burgerTop,
+    .burgerBottom {
+        height: 100px;
+    }
+
+    .lettuceSlice,
+    .baconSlice,
+    .cheeseSlice,
+    .meatSlice {
+        width: 40%;
+    }
+
+    .ingredientsButtons {
+        height: 250px;
+        margin-top: auto;
+    }
 }
