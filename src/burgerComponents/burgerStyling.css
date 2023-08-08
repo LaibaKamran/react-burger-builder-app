@@ -21,6 +21,7 @@ body{
 
 .burgerIngredients p{
     text-align: center;
+    font-size: larger;
 }
 
 .burgerTop{
@@ -142,7 +143,7 @@ width: 30%;
    background-color: #8f5e1e;
    color: white;
    border: none;
-   /* border: 1px solid #aa6817; */
+   border: 1px solid #aa6817;
    cursor: pointer;
    padding: 8px 20px;
    font-size: large;
@@ -150,17 +151,26 @@ width: 30%;
 
 .lessbtn{
     flex: 1;
-    background-color: rgb(158, 157, 157);
+    background-color: #d39952;
     color: white;
     border: none;
     padding: 8px 20\px;
     font-size: large;
     margin-right: 10px;
+    cursor: pointer;
+}
+
+.lessbtn:hover:not([disabled]){
+    opacity: 0.8;
+}
+
+.morebtn:hover{
+    opacity: 0.8;;
 }
 
 .lessbtn:disabled{
     background-color: #ac9980;
     border: 1px solid #7e7365;
     color: #ccc;
-    cursor: default;
+    cursor: not-allowed;
 }

@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 import './burgerStyling.css';
 
 export default function Burger(){
+
+    const ingredientPrices = {
+        lettuce: 0.5,
+        tomato: 0.3,
+        cheese: 1,
+        meat: 2
+      };
+
     const [lettuce, setLettuce] = useState(0);
     const [bacon, setBacon] = useState(0);
     const [cheese, setCheese] = useState(0);
@@ -54,6 +62,15 @@ export default function Burger(){
           return burger;
     };
 
+    const calculateTotalPrice = () => {
+        let total = 3.00;
+        total = total + (lettuce * ingredientPrices.lettuce +
+          bacon * ingredientPrices.tomato +
+          cheese * ingredientPrices.cheese +
+          meat * ingredientPrices.meat);
+        return total.toFixed(2);
+      };
+
     return(
         <div className='container'>
          <div className="burgerIngredients">
@@ -62,25 +79,25 @@ export default function Burger(){
         <div className="burgerBottom"></div>
       </div>
       <div className='ingredientsButtons'>
-      <p>Current Price:</p>
+      <p>Current Price: <strong>${calculateTotalPrice()}</strong></p>
         <div className='sub-div'>
             <div className='ingrLabel'>Lettuce:</div>
-            <button className='lessbtn' onClick = {() => handleIngredients('remove','lettuce')}>Less</button>
+            <button className='lessbtn' onClick = {() => handleIngredients('remove','lettuce')} disabled={lettuce === 0}>Less</button>
             <button className='morebtn'onClick = {() => handleIngredients('add','lettuce')}>More</button>
         </div>
         <div className='sub-div'>
             <div className='ingrLabel'>Bacon:</div>
-            <button className='lessbtn' onClick = {() => handleIngredients('remove','bacon')}>Less</button>
+            <button className='lessbtn' onClick = {() => handleIngredients('remove','bacon')} disabled={bacon === 0}>Less</button>
             <button className='morebtn' onClick = {() => handleIngredients('add','bacon')}>More</button>
         </div>
         <div className='sub-div'>
             <div className='ingrLabel'>Cheese:</div>
-            <button className='lessbtn' onClick = {() => handleIngredients('remove','cheese')}>Less</button>
+            <button className='lessbtn' onClick = {() => handleIngredients('remove','cheese')} disabled={cheese === 0}>Less</button>
             <button className='morebtn' onClick = {() => handleIngredients('add','cheese')}>More</button>
         </div>
         <div className='sub-div'>
             <div className='ingrLabel'>Meat:</div>
-            <button className='lessbtn' onClick = {() => handleIngredients('remove','meat')}>Less</button>
+            <button className='lessbtn' onClick = {() => handleIngredients('remove','meat')} disabled={meat === 0}>Less</button>
             <button className='morebtn' onClick = {() => handleIngredients('add','meat')}>More</button>
         </div>
       </div>
