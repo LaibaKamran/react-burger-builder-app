@@ -19,6 +19,10 @@ body{
     align-items: center; */
 }
 
+.burgerIngredients p{
+    text-align: center;
+}
+
 .burgerTop{
     background-image: url(../assets/topSide.jpg);
     background-size: 700px;
@@ -35,6 +39,77 @@ body{
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.lettuceSlice{
+/* background-image: url(../assets/lettuse.jpg);
+background-size: 300px;
+height: 27px;
+width: 100%;
+display: table;
+background-repeat: no-repeat;
+background-position: center; */
+width: 35%;
+    height: 7%;
+    margin: 2% auto;
+    background: -webkit-gradient(linear,left top,left bottom,from(#228c1d),to(#91ce50));
+    background: -webkit-linear-gradient(#228c1d,#91ce50);
+    background: -o-linear-gradient(#228c1d,#91ce50);
+    background: linear-gradient(#228c1d,#91ce50);
+    border-radius: 20px
+}
+
+.baconSlice{
+/* background-image: url(../assets/bacon.jpg);
+background-size: 200px;
+height: 27px;
+width: 100%;
+display: table;
+background-repeat: no-repeat;
+background-position: center; */
+width: 30%;
+    height: 3%;
+    background: -webkit-gradient(linear,left top,left bottom,from(#bf3813),to(#c45e38));
+    background: -webkit-linear-gradient(#bf3813,#c45e38);
+    background: -o-linear-gradient(#bf3813,#c45e38);
+    background: linear-gradient(#bf3813,#c45e38);
+    margin: 2% auto;
+}
+
+.cheeseSlice{
+/* background-image: url(../assets/cheese.jpg);
+background-size: 300px;
+height: 27px;
+width: 100%;
+display: table;
+background-repeat: no-repeat;
+background-position: center; */
+width: 38%;
+    height: 4.5%;
+    margin: 2% auto;
+    background: -webkit-gradient(linear,left top,left bottom,from(#f4d004),to(#d6bb22));
+    background: -webkit-linear-gradient(#f4d004,#d6bb22);
+    background: -o-linear-gradient(#f4d004,#d6bb22);
+    background: linear-gradient(#f4d004,#d6bb22);
+    border-radius: 20px;
+}
+
+.meatSlice{
+/* background-image: url(../assets/meat.jpg);
+background-size: 300px;
+height: 27px;
+width: 100%;
+display: table;
+background-repeat: no-repeat;
+background-position: center; */
+width: 30%;
+    height: 8%;
+    background: -webkit-gradient(linear,left top,left bottom,from(#7f3608),to(#702e05));
+    background: -webkit-linear-gradient(#7f3608,#702e05);
+    background: -o-linear-gradient(#7f3608,#702e05);
+    background: linear-gradient(#7f3608,#702e05);
+    margin: 2% auto;
+    border-radius: 15px;
 }
 
 .ingredientsButtons{
